@@ -12,6 +12,11 @@
     text-align: left !important;
 }
 
+.subheading {
+    text-align: center;
+    font-weight: 600;
+}
+
 .intro {
     text-align: center;
     padding: 3em 1em 3em 1em;
@@ -78,12 +83,21 @@
     border-color: #F8F8F8;
 }
 
+.main {
+    padding: 0.5em;
+    b {
+        color: #22559c;
+        font-weight: 400;
+    }
+
+    .main-txt {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
 .faq {
     padding: 0.5em;
-    .faq-title {
-        text-align: center;
-        font-weight: 600;
-    }
     .faq-text {
         font-size: 18px;
     }
