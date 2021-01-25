@@ -5,14 +5,10 @@
 
 .nav-item {
   font-size: 18px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-  text-align: center !important;
+  align-items: center !important;
+  text-align: left !important;
 }
 
 .nav-link {
@@ -22,17 +18,10 @@
 
 a {
   color: #22559c;
-  text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
-}
-
-.subheading {
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 1em;
 }
 
 .action {
@@ -53,10 +42,14 @@ a:hover {
   transition: all 0.4s ease 0s;
 }
 
+.subheading {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
 .title {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   margin: 0.3em 0em 2em 0em;
 }
@@ -64,9 +57,7 @@ a:hover {
 .intro {
   text-align: center;
   padding: 6em 1em 3em 1em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .intro h1 {
@@ -85,14 +76,10 @@ a:hover {
   border-radius: 10px;
   border: solid white 1px;
   font-size: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #22559c), color-stop(50%, #ffffff));
+  justify-content: center;
   background: linear-gradient(to right, #22559c 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: left bottom;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin: 0.5em 0em 1em 0em;
   padding: 0.5em 2em 0.5em 2em;
@@ -186,10 +173,7 @@ a:hover {
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -202,9 +186,7 @@ a:hover {
 .team {
   text-align: center;
   padding: 2em 1em 2em 1em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .team .team-img {
@@ -250,8 +232,7 @@ a:hover {
   padding: 10px;
   font-size: 16px;
   font-weight: 400;
-  -webkit-box-shadow: 0 10px 6px -6px #767676;
-          box-shadow: 0 10px 6px -6px #767676;
+  box-shadow: 0 10px 6px -6px #767676;
   background-color: #D7E8FF;
 }
 
@@ -268,9 +249,7 @@ a:hover {
   color: black;
   text-align: center;
   font-size: 18px !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .faq-question .faq-question-header {
@@ -305,4 +284,30 @@ a:hover {
     padding: 1em 7em 0em 7em;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+
+/* donate */
+ul h6 {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.donate {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donate .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.donate .responsive-iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
