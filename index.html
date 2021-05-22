@@ -95,7 +95,7 @@
                     <div>
                         <img src = "images/home_circles.png">
                     </div>
-                    <p class = "intro-txt">Work together to identify and propose solutions to problems that will shape our future. </p>
+                    <p class = "intro-txt">We have completed and hosted Impact Ideathon 2.0 this past February. Take a look at our testimonies from that event and anticipate another Impact Ideathon this summer. We are excited to see you there!</p>
                     <!-- <p class = "intro-txt">Identify and propose solutions to problems that will shape our future in our first-ever design thinking challenge. 🌎</p> -->
                     <!-- <p class = "intro-txt">Three days filled with speakers, workshops, prizes, and more, students will collaborate to create and pitch sustainable development projects in teams of 2-4 to a panel of judges. ⚒️ No prior experience necessary.</p> -->
                     <h4 class = "date">February 13-15, 2021</h4>
@@ -186,6 +186,28 @@
         </div>
       </div>
     </section>
+    <section class = "testimony2">
+        <div class="container">
+            <h2 class = "subheading">Testimonies From 2021</h2>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width slides/quotes -->
+            <div class="quote mySlides2">
+              <blockquote>Impact Ideathon was an incredible networking event that gathered plenty of people with similar interests across different time zones to team up and help solve the world's problems. Meeting new people and listening to special speakers was a breath of fresh air after living under a pandemic. Developing a solution and presenting an idea built organization, creativity, and social skills. Impact Ideathon is a team-building event, a time management event, and a creative problem-solving event; it is a worthwhile experience.</blockquote>
+              <b>- Tiffany</b>
+              <h6>United States</h6>
+            </div>
+            <div class="quote mySlides2">
+              <blockquote>When I joined as a participant of the virtual “Impact Ideathon,” I barely had a clue of what I would experience. Who was I going to meet there and what would the program’s schedule be like? When the event started, I was met with kind and compassionate organizers, who made the program straightforward and made me feel more comfortable being at the event, and nice team members (who would work together with me to create an impactful idea to present from scratch). The guest speakers each shared a valuable and unique part of their life experiences and the workshops proved to be fun to engage in. It also wasn’t mandatory to participate all in the speaker and workshop events, allowing some people like me to put a bit more time into the group project. If there is one/two things to take away from this program, it is that hard work/determination and building those interactive relationships pays off in the long-run.</blockquote>
+              <b>- Richard</b>
+              <h6>United States</h6>
+            </div>
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+          </div>
+        </div>
+      </section>
     <section class="team">
         <div class="container">
             <h2 class="subheading">Meet the Team</h2>
@@ -448,6 +470,29 @@
           }
         slides[slideIndex-1].style.display = "block";
       }
+
+      var slideIndex2 = 1;
+      showSlides2(slideIndex2);
+
+      function plusSlides2(n) {
+        showSlides2(slideIndex2 += n);
+      }
+
+      function currentSlide2(n) {
+        showSlides2(slideIndex2 = n);
+      }
+
+      function showSlides2(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides2");
+        if (n > slides.length) {slideIndex2 = 1}
+          if (n < 1) {slideIndex2 = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+        slides[slideIndex2-1].style.display = "block";
+      }
+
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

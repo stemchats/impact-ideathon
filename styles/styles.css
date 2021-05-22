@@ -5,9 +5,13 @@
 
 .nav-item {
   font-size: 18px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  align-items: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
   text-align: left !important;
 }
 
@@ -32,6 +36,7 @@ a:hover {
   padding: 1rem 1rem;
   border: 2px solid #494949 !important;
   display: inline-block;
+  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
 
@@ -39,6 +44,7 @@ a:hover {
   color: #ffffff !important;
   background: #22559a;
   border-color: #22559a !important;
+  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
 
@@ -49,7 +55,9 @@ a:hover {
 }
 
 .title {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   margin: 0.3em 0em 2em 0em;
 }
@@ -57,7 +65,9 @@ a:hover {
 .intro {
   text-align: center;
   padding: 6em 1em 3em 1em;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .intro h1 {
@@ -76,10 +86,14 @@ a:hover {
   border-radius: 10px;
   border: solid white 1px;
   font-size: 20px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #22559c), color-stop(50%, #ffffff));
   background: linear-gradient(to right, #22559c 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: left bottom;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin: 0.5em 0em 1em 0em;
   padding: 0.5em 2em 0.5em 2em;
@@ -161,6 +175,15 @@ a:hover {
   text-align: left;
 }
 
+.mySlides2 {
+  display: none;
+  padding: 80px;
+}
+
+.mySlides2 blockquote {
+  text-align: left;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -173,7 +196,10 @@ a:hover {
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -186,7 +212,9 @@ a:hover {
 .team {
   text-align: center;
   padding: 2em 1em 2em 1em;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team .team-img {
@@ -232,7 +260,8 @@ a:hover {
   padding: 10px;
   font-size: 16px;
   font-weight: 400;
-  box-shadow: 0 10px 6px -6px #767676;
+  -webkit-box-shadow: 0 10px 6px -6px #767676;
+          box-shadow: 0 10px 6px -6px #767676;
   background-color: #D7E8FF;
 }
 
@@ -249,7 +278,9 @@ a:hover {
   color: black;
   text-align: center;
   font-size: 18px !important;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .faq-question .faq-question-header {
@@ -311,3 +342,4 @@ ul h6 {
   right: 0;
   width: 100%;
 }
+/*# sourceMappingURL=styles.css.map */
